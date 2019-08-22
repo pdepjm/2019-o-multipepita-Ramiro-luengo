@@ -18,7 +18,7 @@ object pepita {
 	}
 	
 	method cuantoQuiereVolar(){
-		return return energia.div(5) + self.estaEntre300y400() + self.esMultiploDe20()
+		return energia.div(5) + self.estaEntre300y400() + self.esMultiploDe20()
 	}
 	
 	method estaCansada() {
@@ -56,4 +56,14 @@ object manzana {
 	method energiaQueOtorga() { 
 		return 50
 	}	
+}
+
+object mijo {
+	method mojarse(){
+		return 15
+	}
+	
+	method secarse(){
+		return 20
+	}
 }
