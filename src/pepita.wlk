@@ -1,6 +1,26 @@
 object pepita {
 	var energia = 100
-
+	
+	method estaFeliz(){
+		return energia.between(500,1000)
+	}
+		
+	method estaEntre300y400() {
+		if (energia.between(300,400))
+			return 10
+		return 0
+	}
+	
+	method esMultiploDe20(){
+		if(energia % 20 == 0)
+			return 15
+		return 0
+	}
+	
+	method cuantoQuiereVolar(){
+		return return energia.div(5) + self.estaEntre300y400() + self.esMultiploDe20()
+	}
+	
 	method estaCansada() {
 		return energia < 50
 	}
@@ -11,6 +31,12 @@ object pepita {
 
 	method come(comida) {
 		energia = energia + comida.energiaQueOtorga()
+	}
+	
+	method salirAComer(){
+		self.vola(5)
+		self.come(alpiste)
+		self.vola(5)
 	}
 }
 
