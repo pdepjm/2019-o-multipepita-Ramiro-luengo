@@ -4,6 +4,13 @@ object pepita {
 	method estaFeliz(){
 		return energia.between(500,1000)
 	}
+	
+	method haceLoQueQuieras(){
+		if (self.estaCansada())
+			self.come(alpiste)
+		else
+			self.vola(8)
+		}
 		
 	method estaEntre300y400() {
 		if (energia.between(300,400))
