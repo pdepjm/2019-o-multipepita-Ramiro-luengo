@@ -47,6 +47,16 @@ object pepita {
 	}
 }
 
+object roque{
+	method entrenar(alguien){
+	alguien.vola(10)
+	alguien.come(alpiste)
+	alguien.vola(5)
+	alguien.haceLoQueQuieras()
+	}
+}
+
+
 object alpiste {
 	var gramos = 10
 	
